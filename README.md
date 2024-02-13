@@ -19,3 +19,24 @@ The **My First Django Project** is my initial experience with Django. It's a sim
 6. [To Do](#to-do)
 7. [Project Team](#project-team)
 8. [Sources](#sources)
+
+
+## Technologies
+- Django
+- Python
+
+
+## Getting Started
+1. Install Python if it's not already installed.
+2. Clone the repository: `git clone https://github.com/your-username/my_first_django_project.git`
+3. Navigate to the project directory: `cd my_first_django_project`
+4. Install dependencies: `pip install -r requirements.txt`
+
+
+## Testing
+Our project uses Django tests. To run the tests, use the following command:
+
+
+## Deploy and CI/CD
+Not applicable at the moment.
+
