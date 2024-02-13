@@ -40,3 +40,17 @@ Our project uses Django tests. To run the tests, use the following command:
 ## Deploy and CI/CD
 Not applicable at the moment.
 
+
+## Contributing
+If you'd like to contribute to the project, please open an issue or submit a pull request. Before submitting a PR, ensure that the project adheres to the style guides.
+
+
+## To Do
+- Implement user authentication
+- Implement CRUD operations for objects
+- Improve design
+
+
+## Project Team
+- Filiushko Vladislav — Back-End Engineer
+- Email: vladosmen29@gmail.com
