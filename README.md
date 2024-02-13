@@ -54,3 +54,8 @@ If you'd like to contribute to the project, please open an issue or submit a pul
 ## Project Team
 - Filiushko Vladislav — Back-End Engineer
 - Email: vladosmen29@gmail.com
+
+
+## Sources
+- [Django Documentation](https://docs.djangoproject.com/en/stable/)
+- [Django Girls Tutorial](https://tutorial.djangogirls.org/en/)
