@@ -9,7 +9,7 @@ WORKDIR /app
 
 COPY requirements.txt /app/
 
-RUN apt-get update && apt-get upgrate -y
+RUN apt-get update && apt-get upgrade -y
 RUN pip install -r requirements.txt
 
 COPY . .
