@@ -1,0 +1,53 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=my_first_project
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres_data:var/lib/postgresql/postgres_data
+    networks:
+      - my_first_project
+
+  web:
+    build:
+      context:
+      dockerfile: ./Dockerfile
+    command: >
+      bash -c "python manage.py makemigrations &&
+              python manage.py migrate &&
+              python manage.py collectstatic --noinput &&
+              gunicorn core.wsgi:application --bind 0.0.0.0:8008 --timeout 10000 --limit-request-field_size 16384 --workers 2"
+
+    volumes:
+      - ./app
+      - static_volume:/app/staticfiles
+    expose:
+      - 8008
+
+    depends_on:
+      - db
+
+    environment:
+      - DJANGO_SETTINGS_MODULE=hello.settings.basa
+      - POSTGRES_DB=my_first_project
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_HOST=db
+      - DEBUG=True
+
+    networks:
+      - my_first_project
+
+      
+
+
+
+    
+
+    
+
+
